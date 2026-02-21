@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CompressPro - Free Online Image Compressor</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>CompressPro</h1>
+  <p>Free Online Image Compressor • Fast • Secure • No Upload to Server</p>
+</header>
+
+<section class="hero">
+  <div class="card">
+
+    <div class="upload-area" id="dropArea">
+      <input type="file" id="upload" accept="image/*" hidden>
+      <p>Drag & Drop Image</p>
+      <span>or Click to Upload</span>
+    </div>
+
+    <div class="preview-container">
+      <img id="previewImage" />
+    </div>
+
+    <div class="controls">
+      <label>Quality: <span id="qualityValue">80</span>%</label>
+      <input type="range" id="quality" min="10" max="100" value="80">
+    </div>
+
+    <div class="info">
+      <div>
+        <h4>Original Size</h4>
+        <p id="originalSize">-</p>
+      </div>
+      <div>
+        <h4>Compressed Size</h4>
+        <p id="compressedSize">-</p>
+      </div>
+    </div>
+
+    <button id="downloadBtn" disabled>Download Compressed Image</button>
+
+  </div>
+</section>
+
+<section class="description">
+  <h2>Why Use CompressPro?</h2>
+  <p>
+    Compress your images instantly without uploading to any server. 
+    Your images stay 100% private. Perfect for websites, job applications, 
+    forms, social media, and faster loading pages.
+  </p>
+</section>
+
+<footer>
+  © 2026 CompressPro 
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
